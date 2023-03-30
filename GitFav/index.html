@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GitFav</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="./js/main.js" type="module" defer></script>
+
+</head>
+
+<body>
+  <div id="app">
+    
+    <header>
+      <img  class="logo" src="./img/Gitfav.png" alt="GitFav">
+      <div class="search">
+        <label class="sr-only" for="input-search">Digite o Github que quer favoritar</label>
+        <input id="input-search"  type="text" placeholder="Digite o Github que quer favoritar">
+  
+        <button class="button">
+           <img src="./img/star.png" alt="Estrela">
+           <span>Favoritar</span>
+        </button>
+  </div>
+
+  </header>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Usuário</th>
+        <th>Repositories</th>
+        <th>Followers</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="user">
+          <img src="https://github.com/hudd1040.png" alt="imagem HudsonMachado">
+          <a href="https://github.com/hudd1040" target="_blank">
+          <p>Hudson Machado</p>
+          <span>/hudd1040</span>
+        </a>
+        </td>
+
+        <td class="repositories">13</td>
+        <td class="followers">15</td>
+        <td>
+          <button class="ação">Remover</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="user">
+          <img src="https://github.com/danilosilvestre.png" alt="imagem Danilosilvestre">
+          <a href="https://github.com/Danilosilvestre" target="_blank">
+          <p>Danilo Silvestre</p>
+          <span>/danilosilvestre</span>
+        </a>
+        </td>
+
+        <td class="repositories">12</td>
+        <td class="followers">1</td>
+        <td>
+          <button class="ação">Remover</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="estrela" >
+    <img src="./img/Estrela.png" alt="Estrela ">
+    <span>Nenhum favorito ainda!</span>
+  </div>
+</div>
+</body>
+</html>
